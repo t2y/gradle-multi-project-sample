@@ -1,14 +1,10 @@
 package base;
 
 import com.google.common.math.LongMath;
-
-import java.math.RoundingMode;
-
-import lombok.extern.slf4j.Slf4j;
-
-import org.apache.commons.math3.stat.Frequency;
-
 import common.MyLibrary;
+import java.math.RoundingMode;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.math3.stat.Frequency;
 
 @Slf4j
 public abstract class MyBase implements MyInterface {
