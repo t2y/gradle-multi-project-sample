@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+mainClassName = 'app.Main'
+
+dependencies {
+    compile project(':base')
+}
+
+task customFatJar(type: Jar) {
+    manifest {
+        attributes 'Main-Class': 'app.Main'
+    }
+    baseName = 'executable'
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    with jar
+}
