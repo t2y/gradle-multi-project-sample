@@ -69,3 +69,9 @@ Run test for all sub projects.
 ```bash
 $ ./gradlew --info cleanTest test
 ```
+
+## References
+
+* https://guides.gradle.org/creating-multi-project-builds/
+* https://docs.gradle.org/current/userguide/intro_multi_project_builds.html
+* https://github.com/embulk/embulk
